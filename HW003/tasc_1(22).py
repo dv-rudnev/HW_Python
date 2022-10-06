@@ -3,10 +3,10 @@
 
 myList = [2, 3, 5, 9, 3]
 print(myList)
-# list_length = len(myList)
-sum = 0
+ 
+summa = 0
 for i in range(len(myList)):
     if i % 2 == 1:
-        sum = sum + myList[i]
+        summa = summa + myList[i]
 
-print("Сумма элементов с нечетным индексов равна:", sum)
+print("Сумма элементов с нечетным индексов равна:", summa)
