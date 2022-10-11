@@ -3,7 +3,8 @@
 
 import math
 
-
+pi = math.pi
 from_user = str(input("Введите точность числа пи, например 0,001: "))
-len_show = len(str(from_user).split('.,')[-1])
-print(str(math.pi)[:len_show])
+
+len_show = len(from_user) - 2
+print(round(pi, len_show))
