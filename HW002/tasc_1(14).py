@@ -3,10 +3,17 @@
 # - 0,56 -> 11
 
 
-from dataclasses import replace
 
-str_numb = (input('Введите вещественное число: '))
-str_numb_tmp = str_numb.split()
-print(str_numb_tmp)
-# summa = sum(str_numb_tmp[::])
-# print(str_numb, '->', summa)
+num = input('Введите число: ')
+
+def SumDigits(n):
+    n = str(n)
+    sum = 0
+    exsept = '0.,-'
+    for i in n:
+        if i not in exsept:
+            sum += int(i)
+    return sum
+
+
+print(SumDigits(num))
